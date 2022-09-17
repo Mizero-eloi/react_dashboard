@@ -60,7 +60,7 @@ const App = () => {
             }`}
           >
             <div className="fixed mg:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
-              Navbar
+              <Navbar />
             </div>
           </div>
 
