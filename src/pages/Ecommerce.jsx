@@ -70,11 +70,17 @@ const Ecommerce = () => {
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
             <div className="flex items-center gap-4">
-              <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
+              <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
                 <span>Expense</span>
+              </p>
+              <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
+                <span>
+                  <GoPrimitiveDot />
+                </span>
+                <span>Budget</span>
               </p>
             </div>
           </div>
@@ -88,24 +94,35 @@ const Ecommerce = () => {
                   </span>
                 </p>
                 <p className="text-gray-500 mt-1">Budget</p>
-                <div className="mt-8">
-                  <p>
-                    <span className="text-3xl font-semibold">$48, 438</span>
-                  </p>
-                  <p className="text-gray-500 mt-1">Expense</p>
-                </div>
-                <div className="mt-5">
-                  <SparkLine
-                    currentColor="blue"
-                    id="line-sparkline"
-                    type="Line"
-                    height="80px"
-                    width="250px"
-                    data={SparklineAreaData}
-                    color="blue"
-                  />
-                </div>
               </div>
+              <div className="mt-8">
+                <p>
+                  <span className="text-3xl font-semibold">$48, 438</span>
+                </p>
+                <p className="text-gray-500 mt-1">Expense</p>
+              </div>
+              <div className="mt-5">
+                <SparkLine
+                  currentColor="blue"
+                  id="line-sparkline"
+                  type="Line"
+                  height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color="blue"
+                />
+              </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor="blue"
+                  text="Download Report"
+                  borderRadius="10px"
+                />
+              </div>
+            </div>
+            <div>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
